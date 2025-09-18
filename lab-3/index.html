@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Профайл засварлах - Лаб №3</title>
+</head>
+<body>
+  <h1>Профайл засварлах</h1>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+      <legend>Хувийн мэдээлэл</legend>
+
+      <label for="fullname">Бүтэн нэр</label><br>
+      <input type="text" value="Mendamgalan Jargal"><br><br>
+
+      <label for="nickname">Хоч (nickname)</label><br>
+      <input type="text" value="Mendee"><br><br>
+
+      <label for="birthdate">Төрсөн огноо</label><br>
+      <input type="date" value="1998-01-15"><br><br>
+
+      <label for="birthdatetime">Төрсөн огноо, цаг</label><br>
+      <input type="datetime-local" value="1998-01-15T10:30"><br><br>
+
+      <label>Хүйс</label><br>
+      <input type="radio" name="gender" value="male"> Эрэгтэй<br>
+      <input type="radio" name="gender" value="female"> Эмэгтэй<br>
+      <input type="radio" name="gender" value="other" checked> Бусад<br><br>
+
+      <label for="age">Нас</label><br>
+      <input type="number" value="27"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Холбоо барих</legend>
+
+      <label for="email">Email</label><br>
+      <input id="email" name="email" type="email" value="mendam@example.com"><br><br>
+
+      <label for="phone">Утас</label><br>
+      <input id="phone" name="phone" type="tel" value="+976-9911-2233"><br><br>
+
+      <label for="website">Веб сайт</label><br>
+      <input id="website" name="website" type="url" value="https://example.com"><br><br>
+
+      <label for="password">Нууц үг</label><br>
+      <input id="password" name="password" type="password" value="secret123"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Нэмэлт мэдээлэл</legend>
+
+      <label for="about">Танилцуулга</label><br>
+      <textarea id="about" name="about" rows="4">Би чамд хайртай.</textarea><br><br>
+
+      <label for="language">Хэл сонгох</label><br>
+      <select id="language" name="language">
+        <option value="mn" selected>Монгол</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+      </select><br><br>
+
+      <label>Хобби</label><br>
+      <input type="checkbox" name="hobby" value="coding" checked> Код бичих<br>
+      <input type="checkbox" name="hobby" value="music"> Хөгжим<br>
+      <input type="checkbox" name="hobby" value="sports"> Спорт<br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Input төрлүүд</legend>
+
+      <label for="favcolor">Өнгө</label><br>
+      <input id="favcolor" name="favcolor" type="color" value="#008000"><br><br>
+
+      <label for="profile_pic">Зураг</label><br>
+      <input id="profile_pic" name="profile_pic" type="file"><br><br>
+
+      <label for="month">Сар</label><br>
+      <input id="month" name="month" type="month" value="2025-09"><br><br>
+
+      <label for="week">7 хоног</label><br>
+      <input id="week" name="week" type="week" value="2025-W37"><br><br>
+
+      <label for="time">Цаг</label><br>
+      <input id="time" name="time" type="time" value="14:30"><br><br>
+
+      <label for="range">Түвшин</label><br>
+      <input id="range" name="range" type="range" min="0" max="10" value="6"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Товчлуурууд</legend>
+      <button type="submit">Хадгалах</button><br><br>
+      <button type="reset">Арилгах</button><br><br>
+      <button type="button" onclick="alert('Энгийн товчлуур')">Мэдэгдэл</button>
+    </fieldset>
+  </form>
+</body>
+</html>
