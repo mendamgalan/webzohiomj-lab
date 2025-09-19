@@ -203,6 +203,7 @@
     }
     #nav ul.menu {
         justify-content: flex-start;
+        flex-direction: column;
     }
     #nav{
         padding: 0;
@@ -243,6 +244,23 @@
 }
     </style>
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector("#nav ul.menu li.on_mobile"); 
+    const menuItems = document.querySelectorAll("#nav ul.menu li:not(.on_mobile)");
+
+    menuToggle.addEventListener("click", function() {
+        menuItems.forEach(item => {
+            if (item.style.display === "block") {
+                item.style.display = "none";
+            } else {
+                item.style.display = "block";
+            }
+        });
+    });
+});
+</script>
+
 <body>
     <div id="header">
         <div class="container">
